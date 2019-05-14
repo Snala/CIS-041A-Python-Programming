@@ -29,8 +29,7 @@ if __name__ == '__main__':
     # First we sort the list
     list_of_characters.sort()
     # Let's print them each out.
-    for item in list_of_characters:
-        print(item.value)
+    [print(item.value) for item in list_of_characters]
 
     # Print out the sentence
     for character in sentence:
