@@ -51,20 +51,8 @@ class Card:
         t2 = other.suit, other.rank
         return t1 < t2
 
-    def count(self):
-        if not self.rank:
-            value = 0
-        elif self.rank == 'Ace':
-            value = 1
-        elif self.rank == 'Jack':
-            value = 11
-        elif self.rank == 'Queen':
-            value = 12
-        elif self.rank == 'King':
-            value = 13
-        else:
-            value = int(self.rank)
-        return value
+    def value(self):
+        return self.rank
 
 
 class Deck:
@@ -140,7 +128,7 @@ class Hand(Deck):
     def total(self):
         total = int()
         for card in self.cards:
-            total = total + card.count()
+            total = total + card.value()
         return total
 
 
