@@ -1,0 +1,1 @@
+Redo Lab 6 or 9 using Matplotlib.  Some of the Matplotlib examples use a Sine wave function in Numpy, however, lab6 uses files to produce the points to be plotted.  Some students report negative results with data files that have negative values.  Consequently, use data files with positive values.
